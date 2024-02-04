@@ -1,0 +1,487 @@
+{
+  "last_node_id": 38,
+  "last_link_id": 59,
+  "nodes": [
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        -52,
+        4
+      ],
+      "size": {
+        "0": 590,
+        "1": 690
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10,
+            42
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "微信图片_20221021195638 (1).jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "PrimitiveNode",
+      "pos": [
+        553,
+        314
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            52,
+            53
+          ],
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "seed",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        30650473920352,
+        "randomize"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "DisplayText_Zho",
+      "pos": [
+        1107,
+        409
+      ],
+      "size": {
+        "0": 280,
+        "1": 270
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 50,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "The most right boy is wearing a blue and white striped jersey with the number 10 on it, and he is smiling at the camera."
+      ]
+    },
+    {
+      "id": 29,
+      "type": "QWenVL_API_S_Zho",
+      "pos": [
+        784,
+        422
+      ],
+      "size": {
+        "0": 280,
+        "1": 160
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 42,
+          "slot_index": 0
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 53,
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            50
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QWenVL_API_S_Zho"
+      },
+      "widgets_values": [
+        "describe the most right boy in the image.",
+        "qwen-vl-max",
+        30650473920352,
+        "fixed"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1844,
+        17
+      ],
+      "size": [
+        380,
+        270
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 55,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "The most right boy in the image is wearing a white polo shirt with the number 10 on it. He has short hair and is standing next to another boy who is sitting on the ground. They both appear to be smiling at the camera."
+      ]
+    },
+    {
+      "id": 10,
+      "type": "QWenVL_API_S_Zho",
+      "pos": [
+        779,
+        19
+      ],
+      "size": {
+        "0": 280,
+        "1": 160
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 10,
+          "slot_index": 0
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 52,
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QWenVL_API_S_Zho"
+      },
+      "widgets_values": [
+        "describe the most right boy in the image.",
+        "qwen-vl-plus",
+        30650473920352,
+        "fixed"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "DisplayText_Zho",
+      "pos": [
+        1105,
+        15
+      ],
+      "size": {
+        "0": 280,
+        "1": 270
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 59,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            54
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "The most right boy in the image is wearing a white polo shirt with the number 10 on it. He has short hair and is standing next to another boy who is sitting on the ground. They both appear to be smiling at the camera."
+      ]
+    },
+    {
+      "id": 33,
+      "type": "ZFTextTranslation",
+      "pos": [
+        1417,
+        15
+      ],
+      "size": [
+        400,
+        208
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 54,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            55
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "platform",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "source",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "target",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ZFTextTranslation"
+      },
+      "widgets_values": [
+        "",
+        "volcengine",
+        "en",
+        "zh-cn"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "SeargePromptText",
+      "pos": [
+        660,
+        76
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            59
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SeargePromptText"
+      },
+      "widgets_values": [
+        "The most right boy in the image is wearing a white polo shirt with the number 10 on it. He has short hair and is standing next to another boy who is sitting on the ground. They both appear to be smiling at the camera."
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      12,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      12,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      50,
+      29,
+      0,
+      32,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      31,
+      0,
+      10,
+      1,
+      "INT"
+    ],
+    [
+      53,
+      31,
+      0,
+      29,
+      1,
+      "INT"
+    ],
+    [
+      54,
+      13,
+      0,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      55,
+      33,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      59,
+      38,
+      0,
+      13,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "info": {
+      "name": "workflow",
+      "author": "",
+      "description": "",
+      "version": "1",
+      "created": "2024-02-03T15:14:25.291Z",
+      "modified": "2024-02-03T15:29:44.352Z",
+      "software": "ComfyUI"
+    }
+  },
+  "version": 0.4
+}

@@ -1,0 +1,5 @@
+https://huggingface.co/jackson885/anything-v5-PrtRE/resolve/main/anything-v5-PrtRE.safetensors?download=true
+https://huggingface.co/h94/IP-Adapter
+https://huggingface.co/h94/IP-Adapter-FaceID
+https://sliders.baulab.info/weights/xl_sliders/
+
