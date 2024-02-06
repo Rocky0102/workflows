@@ -3,3 +3,4 @@ https://huggingface.co/h94/IP-Adapter
 https://huggingface.co/h94/IP-Adapter-FaceID
 https://sliders.baulab.info/weights/xl_sliders/
 
+https://pan.quark.cn/s/14ebdaf0bf0f 
